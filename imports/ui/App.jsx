@@ -1,12 +1,16 @@
 import React from 'react';
 import { ContactForm } from "./ContactForm";
-import { ContactList } from './ContactList';
+import { ContactList } from "./ContactList";
+import { Header } from "./Header";
 
 export const App = () => (
-  <div>
-        <h1>Manly Stanleys</h1>
-        <p>Its where you want to be</p>
-        <ContactForm />
-        <ContactList />
+    <div>
+        <Header />
+        <div className="min-h-full">
+            <div className="max-w-4xl mx-auto p-2">
+                <ContactForm />
+                <ContactList />
+            </div>
+        </div>
     </div>
 );

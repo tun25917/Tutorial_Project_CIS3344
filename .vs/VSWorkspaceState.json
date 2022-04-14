@@ -1,12 +1,14 @@
 {
   "ExpandedNodes": [
     "",
-    "\\client",
     "\\imports",
     "\\imports\\api",
     "\\imports\\ui",
+    "\\public",
+    "\\public\\images",
     "\\server",
     "\\tests"
   ],
+  "SelectedNode": "\\tailwind.config.js",
   "PreviewInSolutionExplorer": false
 }
