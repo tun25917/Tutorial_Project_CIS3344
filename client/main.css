@@ -6,3 +6,23 @@ body {
     background-color: lightblue;
     font-family: 'Times New Roman', Times, serif;
 }
+
+.menuPreview {
+    height: 180pt;
+    width: 270pt;
+}
+
+h2 {
+    font-size: 300%;
+    text-decoration: underline;
+    color: black;
+    align-content: center;
+    text-align: center;
+}
+
+h3 {
+    font-size: 250%;
+    color: black;
+    font-family: 'Copperplate Gothic';
+    font-weight: 700;
+}

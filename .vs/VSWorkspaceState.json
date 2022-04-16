@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\imports",
+    "\\imports\\api",
+    "\\imports\\ui"
   ],
   "PreviewInSolutionExplorer": false
 }

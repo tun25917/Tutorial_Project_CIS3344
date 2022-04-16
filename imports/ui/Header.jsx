@@ -2,7 +2,6 @@ import React from 'react';
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
-{/*import { Link } from 'react-router';*/ }
 
 const navigation = [
     { name: 'Home', href: '#' },
@@ -16,16 +15,6 @@ export const Header = () => {
         <div className="relative bg-#ADD8E6 overflow-show">
             <div className="max-w-7xl mx-auto">
                 <div className="relative z-10 pb-8 bg-#ADD8E6 sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
-                    <svg
-                        className="hidden lg:block absolute right-0 inset-y-0 h-1/4 w-48 text-white transform translate-x-1/2"
-                        fill="#ADD8E6"
-                        viewBox="0 0 100 100"
-                        preserveAspectRatio="none"
-                        aria-hidden="true"
-                    >
-                        <polygon points="50,0 100,0 0,100 0,0" />
-                    </svg>
-
                     <Popover>
                         <div className="relative pt-6 px-4 sm:px-6 lg:px-8">
                             <nav className="relative flex items-center justify-between sm:h-10 lg:justify-start" aria-label="Global">
