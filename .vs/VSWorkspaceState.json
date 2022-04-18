@@ -3,7 +3,9 @@
     "",
     "\\imports",
     "\\imports\\api",
-    "\\imports\\ui"
+    "\\imports\\ui",
+    "\\server"
   ],
+  "SelectedNode": "\\server\\main.js",
   "PreviewInSolutionExplorer": false
 }

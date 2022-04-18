@@ -1,7 +1,8 @@
 import { Meteor } from 'meteor/meteor';
-import "../imports/api/ContactsCollection";
-import "../imports/api/ContactsMethods";
-import "../imports/api/ContactsPublications";
+import "../imports/api/ReviewsCollection";
+import "../imports/api/ReviewsMethods";
+import "../imports/api/ReviewsPublications";
+import "../imports/api/MenuCollection";
 
 Meteor.startup(() => {
 });

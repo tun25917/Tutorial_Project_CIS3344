@@ -4,8 +4,6 @@ import { Popover, Transition } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
 
 const navigation = [
-    { name: 'Home', href: '#' },
-    { name: 'Menu', href: '#' },
     { name: 'Contact Us', href: '#' },
     { name: 'Cart', href: '#' },
 ]
@@ -35,15 +33,14 @@ export const Header = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
+                                <div className="hidden md:block md:ml-10 md:pr-4 md:space-x-8">&emsp;&emsp;&emsp;<u>Manly Stanleys</u>
+                                    <br />
+                                    <br />
                                     {navigation.map((item) => (
                                         <a key={item.name} href={item.href} className="font-medium text-black-500 hover:text-red-600">
                                             {item.name}
                                         </a>
                                     ))}
-                                    <a href="#" className="font-medium text-indigo-600 hover:text-green-600">
-                                        Log in
-                                    </a>
                                 </div>
                             </nav>
                         </div>
@@ -55,12 +52,8 @@ export const Header = () => {
                             enterTo="opacity-100 scale-100"
                             leave="duration-100 ease-in"
                             leaveFrom="opacity-100 scale-100"
-                            leaveTo="opacity-0 scale-95"
-                        >
-                            <Popover.Panel
-                                focus
-                                className="absolute z-10 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"
-                            >
+                            leaveTo="opacity-0 scale-95">
+                            <Popover.Panel className="absolute z-10 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
                                 <div className="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
                                     <div className="px-5 pt-4 flex items-center justify-between">
                                         <div className="-mr-2">
@@ -72,19 +65,15 @@ export const Header = () => {
                                     </div>
                                     <div className="px-2 pt-2 pb-3 space-y-1">
                                         {navigation.map((item) => (
-                                            <a
-                                                key={item.name}
+                                            <a key={item.name}
                                                 href={item.href}
-                                                className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
-                                            >
+                                                className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">
                                                 {item.name}
                                             </a>
                                         ))}
                                     </div>
-                                    <a
-                                        href="#"
-                                        className="block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100"
-                                    >
+                                    <a href="#"
+                                        className="block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100">
                                         Log in
                                     </a>
                                 </div>
@@ -101,24 +90,6 @@ export const Header = () => {
                             <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
                                 At Manly Stanley's, we pride ourselves on giving our customers the best experience possible
                             </p>
-                            <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
-                                <div className="rounded-md shadow">
-                                    <a
-                                        href="#"
-                                        className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-green-700 md:py-4 md:text-lg md:px-10"
-                                    >
-                                        Check our menu
-                                    </a>
-                                </div>
-                                <div className="mt-3 sm:mt-0 sm:ml-3">
-                                    <a
-                                        href="#"
-                                        className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-indigo-100 hover:bg-green-200 md:py-4 md:text-lg md:px-10"
-                                    >
-                                        Call us
-                                    </a>
-                                </div>
-                            </div>
                         </div>
                     </main>
                 </div>
