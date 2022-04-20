@@ -16,28 +16,3 @@ export const App = () => (
         </div>
     </div>
 );
-
-{/*const [view, setView] = React.useState(1);
-
-export const App = () => {
-        <div>
-            <Header />
-            <button onClick={() => setView(1)}>View 1</button>
-            <button onClick={() => setView(2)}>View 2</button>
-            {
-                {
-                    1: (
-                        <div>
-                            <MenuPreview key={1}/>
-                        </div>
-                    ),
-                    2: (
-                        <div>
-                            <ReviewForm key={2}/>
-                        </div>
-                    )
-                }[view]
-            }
-        </div>
-}
-*/}

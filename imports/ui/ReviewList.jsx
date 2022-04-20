@@ -32,7 +32,7 @@ export const ReviewList = () => {
                         <p className="text-sm font-medium text-gray-500 truncate">{review.email}</p>
                         <p className="text-sm font-medium text-gray-700 truncate">{review.comment}</p>
                     </div>
-                    {/*<div>
+                    <div>
                         <a
                             href="#"
                             onClick={(event) => removeReview(event, review._id)}
@@ -40,7 +40,7 @@ export const ReviewList = () => {
                         >
                             Remove
                         </a>
-                    </div>*/}
+                    </div>
                 </div>
             </li>
         )
